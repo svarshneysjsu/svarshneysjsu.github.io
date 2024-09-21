@@ -1,100 +1,274 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saumya Varshney - Data Analytics Professional</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+
+    <!-- Tabular Heading Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+                <!-- Full-Width Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Saumya Varshney</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Technical Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    </nav>
+
+    <!-- Image in Top Left Corner -->
+    <div class="profile-img">
+        <img src="/Users/saumyavarshney/Desktop/Portfolio/SaumyaVarshneyPortfolio/SaumyaProfilePic.jpeg" alt="Saumya Varshney" class="img-fluid rounded-circle">
+    </div>
+    
+    <header class="bg-dark text-white text-center p-4">
         <div class="container">
             <h1>Saumya Varshney</h1>
-            <p>Research Assistant | Data Analytics Professional | Machine Learning Enthusiast</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/saumyavarshney/">LinkedIn</a>
-                <a href="https://github.com/svarshneysjsu">GitHub</a>
+            <p>Research Assistant at San Jose State University | Data Analytics Professional | Machine Learning Enthusiast | Skilled in Python, SQL, and Big Data Technologies</p>
+            <div class="social-links mt-3">
+                <a href="https://www.linkedin.com/in/saumyavarshney/" class="btn btn-outline-light">LinkedIn</a>
+                <a href="https://github.com/svarshneysjsu" class="btn btn-outline-light">GitHub</a>
             </div>
         </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="py-5 bg-light">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I am a dedicated Data Analytics professional with a strong foundation in computer science and engineering, currently pursuing my Master of Science in Data Analytics at San Jose State University. My expertise lies in applying advanced machine learning models and big data technologies to uncover insights and drive impactful outcomes.</p>
+            <h2 class="text-primary">About Me</h2>
+            <p class="lead">
+
+                I am a passionate and results-oriented Data Analytics professional currently pursuing a Master of Science in Data Analytics at San Jose State University. With a strong foundation in computer science and engineering, I excel in leveraging advanced machine learning techniques, big data technologies, and cloud platforms to transform complex data into actionable insights. My hands-on experience ranges from deploying GPU-accelerated deep learning models and automating workflows to developing scalable data pipelines, all aimed at optimizing business processes and driving informed decision-making.
+                </p>
+                <p class="lead">
+                Throughout my academic and professional journey, including impactful roles at Accenture and Wipro, I have demonstrated a keen ability to solve real-world problems through innovative data-driven solutions. Proficient in tools and languages such as Python, SQL, AWS, and Tableau, I thrive in dynamic environments where I can collaborate with cross-functional teams to deliver high-quality outcomes. My enthusiasm for continuous learning and commitment to excellence empower me to contribute effectively to any data analytics initiative, making meaningful impacts in the ever-evolving tech landscape.
+            </p>
         </div>
     </section>
 
-    <section id="skills">
-        <div class="container">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li>Python, SQL, PySpark, NoSQL, Shell Scripting</li>
-                <li>AWS (Glue, QuickSight, Athena, SageMaker, CloudWatch), Google BigQuery, Apache Spark</li>
-                <li>Database Tools: MySQL Workbench, SQL Server, MongoDB, AWS RDS, Redshift, Neo4j, Snowflake</li>
-                <li>Tools and Technologies: Docker, Apache Airflow, SQL Server Integration Services</li>
-            </ul>
-        </div>
-    </section>
 
-    <section id="experience">
+    <section id="projects" class="py-5 bg-light">
         <div class="container">
-            <h2>Experience</h2>
-            <div class="job">
-                <h3>Research Assistant</h3>
-                <p><strong>San Jose State University, CA (May 2024 - Present)</strong></p>
-                <ul>
-                    <li>Integrated an AI-enabled robot dog with machine learning models to enhance data processing capabilities by 30%.</li>
-                    <li>Trained the robot dog with LLMs to improve communication and interaction by 20%.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Application Development Analyst</h3>
-                <p><strong>Accenture Services Pvt Ltd, Bangalore, India (Mar 2021 - Feb 2022)</strong></p>
-                <ul>
-                    <li>Led end-to-end Azure migration, achieving full system transition in 3 months.</li>
-                    <li>Improved throughput by 20% by eliminating code redundancy and enhancing user experience.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Project Engineer</h3>
-                <p><strong>Wipro Limited, Hyderabad, India (Feb 2018 - Mar 2021)</strong></p>
-                <ul>
-                    <li>Revamped sales and manufacturing application using .Net and SQL scripting, enhancing page load time by 25%.</li>
-                    <li>Directed software release cycles, ensuring 99.99% system availability.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+            <h2 class="section-heading text-primary text-center mb-4">Projects</h2>
+            <div class="row">
+                <!-- Project Card 1 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <img src="/Users/saumyavarshney/Desktop/Portfolio/SaumyaVarshneyPortfolio/images/LinkedIn.jpeg" class="card-img-top" alt="Project 4 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Analysis of LinkedIn Job Market Data Using MySQL and MongoDB</h5>
+                            <p class="card-text">Conducted SQL and NoSQL analyses on job data, enhancing AWS RDS performance by 20%.</p>
+                            <a href="https://github.com/svarshneysjsu/LinkedIn_JobPostingAnalysis_NoSQL" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Paraphrase Identification using Quora Question Pairs</h3>
-                <p>Leveraged NLP with LSTM model, achieving 81% accuracy in predicting question similarity. <a href="https://github.com/svarshneysjsu/Paraphrase-Detection-with-Quora-Question-Pairs">Project Link</a></p>
-            </div>
-            <div class="project">
-                <h3>Bay Area VTA Ridership Forecasting</h3>
-                <p>Forecasted ridership with 80% accuracy using ML models like Random Forest and XGBoost. <a href="https://github.com/svarshneysjsu/VTA-Ridership-Forecast">Project Link</a></p>
-            </div>
-            <div class="project">
-                <h3>AWS-Enabled Data Pipeline for NOAA Weather Data Analysis</h3>
-                <p>Enhanced analytics with AWS Glue, reducing data processing latency by 25%. <a href="https://github.com/svarshneysjsu/AWS-Enabled-Data-Pipeline-for-Weather-Data-Analysis">Project Link</a></p>
-            </div>
-            <div class="project">
-                <h3>Analysis of LinkedIn Job Market Data Using MySQL and MongoDB</h3>
-                <p>Conducted SQL and NoSQL analyses on job data, enhancing AWS RDS performance by 20%. <a href="https://github.com/svarshneysjsu/LinkedIn_JobPostingAnalysis_NoSQL">Project Link</a></p>
+                <!-- Project Card 2 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <img src="/Users/saumyavarshney/Desktop/Portfolio/SaumyaVarshneyPortfolio/images/bayArea.jpg" class="card-img-top" alt="Project 2 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Bay Area VTA Ridership Forecasting</h5>
+                            <p class="card-text">Forecasted ridership with 80% accuracy using ML models like Random Forest and XGBoost.</p>
+                            <a href="https://github.com/svarshneysjsu/VTA-Ridership-Forecast" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <img src="/Users/saumyavarshney/Desktop/Portfolio/SaumyaVarshneyPortfolio/images/Quora.jpg" class="card-img-top" alt="Project 1 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Paraphrase Identification using Quora Question Pairs</h5>
+                            <p class="card-text">Leveraged NLP with LSTM model, achieving 81% accuracy in predicting question similarity.</p>
+                            <a href="https://github.com/svarshneysjsu/Paraphrase-Detection-with-Quora-Question-Pairs" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Project Card 4 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <img src="/Users/saumyavarshney/Desktop/Portfolio/SaumyaVarshneyPortfolio/images/AWS.jpg" class="card-img-top" alt="Project 3 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">AWS-Enabled Data Pipeline for NOAA Weather Data Analysis</h5>
+                            <p class="card-text">Enhanced analytics with AWS Glue, reducing data processing latency by 25%.</p>
+                            <a href="https://github.com/svarshneysjsu/AWS-Enabled-Data-Pipeline-for-Weather-Data-Analysis" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
+
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="section-heading text-center mb-4">Technical Skills</h2>
+            <div class="row">
+                <!-- Skill Card 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="/Users/saumyavarshney/Desktop/Portfolio/SaumyaVarshneyPortfolio/SaumyaProfilePic.jpeg" alt="Python" width="50" class="mb-3">
+                            <h5 class="card-title">Programming & Scripting</h5>
+                            <p class="card-text">Python, SQL, PySpark, NoSQL, Shell Scripting</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Skill Card 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="aws-icon.png" alt="AWS" width="50" class="mb-3">
+                            <h5 class="card-title">Cloud & Big Data</h5>
+                            <p class="card-text">AWS (Glue, QuickSight, Athena, SageMaker, CloudWatch), Google BigQuery, Apache Spark</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Skill Card 3 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="database-icon.png" alt="Database Tools" width="50" class="mb-3">
+                            <h5 class="card-title">Database Tools</h5>
+                            <p class="card-text">MySQL Workbench, SQL Server, MongoDB, AWS RDS, Redshift, Neo4j, Snowflake</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Skill Card 4 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="docker-icon.png" alt="Tools" width="50" class="mb-3">
+                            <h5 class="card-title">Tools and Technologies</h5>
+                            <p class="card-text">Docker, Apache Airflow, SQL Server Integration Services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Modal for Project Details -->
+    <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Detailed description of the project goes here...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="education" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-primary text-center mb-4">Education</h2>
+            <div class="row justify-content-center">
+                <!-- Education Card 1 -->
+                <div class="col-md-6 col-lg-5 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="/Users/saumyavarshney/Desktop/Portfolio/SaumyaVarshneyPortfolio/images/SJSU.jpeg" alt="Master's Degree" width="50" class="mb-3">
+                            <h5 class="card-title">Master of Science in Data Analytics</h5>
+                            <p class="card-text">San Jose State University, CA (Expected: 2024)</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Education Card 2 -->
+                <div class="col-md-6 col-lg-5 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="bachelors-icon.png" alt="Bachelor's Degree" width="50" class="mb-3">
+                            <h5 class="card-title">Bachelor of Technology in Computer Science</h5>
+                            <p class="card-text">Institute of Technology, XYZ University (2018)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+    <footer class="bg-dark text-white text-center p-4">
         <div class="container">
             <p>Saumya Varshney | © 2024</p>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Include the JavaScript for scroll-based navigation -->
+    <script>
+        // Scroll-based active link highlighting code
+        document.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(currentSection)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>

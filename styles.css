@@ -1,4 +1,9 @@
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -29,10 +34,13 @@ header h1 {
 }
 
 header p {
-    text-align: center;
-    margin: 0;
-    font-size: 1.2em;
+    font-size: 1.2rem;  /* Slightly larger text */
+    line-height: 1.6;  /* Add some space between lines */
+    margin: 0 auto;  /* Center-align within the container */
+    max-width: 800px;  /* Set a max width for better readability */
+    padding-top: 10px;  /* Add some padding for spacing */
 }
+
 
 header .social-links {
     text-align: center;
@@ -84,3 +92,132 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+
+header .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+header .social-links a:hover {
+    background: #0779e4;
+    transform: scale(1.1);  /* Adds zoom effect on hover */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.20);
+    transition: all 0.3s ease;
+}
+
+/* Adjusted Profile Image Styling for Top Right Corner */
+.profile-img {
+    position: absolute;
+    top: 80px;    /* Adjusted to leave space for the navigation bar */
+    right: 20px;  /* Keep some distance from the right */
+    width: 150px;  /* Larger size for better visibility */
+    height: 150px;
+}
+
+.profile-img img {
+    width: 100%;  /* Ensure the image takes up the full container size */
+    height: 100%;
+    border-radius: 50%;  /* Round image */
+    border: 4px solid #0779e4;  /* Thicker border for better visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for a floating effect */
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img img:hover {
+    transform: scale(1.1);  /* Slight zoom on hover */
+}
+
+
+/* Highlighted Section Headings */
+.section-heading {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    color: #0779e4;  /* Primary text color */
+    padding: 0.5rem 1rem;
+    background-color: #fff;  /* White background to make the heading pop */
+    z-index: 1;
+}
+
+.section-heading::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.4rem;
+    background-color: #0779e4;  /* Highlight bar color */
+    z-index: -1;
+    border-radius: 3px;
+}
+
+/* General Section Styling */
+section {
+    padding: 60px 0;
+    margin-bottom: 40px;  /* Space between sections */
+}
+
+/* Background colors for different sections */
+#skills {
+    background-color: #f9f9f9;  /* Light grey for Skills section */
+}
+
+#education {
+    background-color: #f0f0f0;  /* Slightly darker grey for Education */
+}
+
+#projects {
+    background-color: #e9ecef;  /* Light blue-grey for Projects */
+}
+
+section {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Adds subtle shadow to separate sections */
+}
+/* Style for the full-width Navbar */
+.navbar {
+    width: 100%;  /* Ensures full width */
+    background-color: #f9f9f9;  /* Light background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 0.75rem 1.25rem;
+    color: #0779e4;  /* Link color */
+    text-transform: uppercase;  /* Uppercase text for a more structured look */
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3;  /* Darker blue on hover */
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        justify-content: center;  /* Center items when collapsed */
+    }
+}
+
+/* Style for active navbar link */
+.navbar-nav .nav-link.active {
+    color: #fff !important;   /* White text for active link */
+    background-color: #0779e4;  /* Background highlight for active link */
+    border-radius: 4px;  /* Rounded corners for the active link */
+    padding: 8px 16px;  /* Add padding for better visibility */
+    transition: background-color 0.3s ease-in-out;  /* Smooth transition effect */
+}
+
