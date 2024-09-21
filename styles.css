@@ -117,7 +117,7 @@ header .social-links a:hover {
 /* Adjusted Profile Image Styling for Top Right Corner */
 .profile-img {
     position: absolute;
-    top: 80px;    /* Adjusted to leave space for the navigation bar */
+    top: 110px;    /* Adjusted to leave space for the navigation bar */
     right: 20px;  /* Keep some distance from the right */
     width: 150px;  /* Larger size for better visibility */
     height: 150px;
@@ -189,13 +189,24 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
 }
 
+/* Normal state for nav links */
 .navbar-nav .nav-link {
     font-size: 1.1rem;
     padding: 0.75rem 1.25rem;
-    color: #0779e4;  /* Link color */
-    text-transform: uppercase;  /* Uppercase text for a more structured look */
-    transition: color 0.3s ease-in-out;
+    color: #0779e4;  /* Blue color for normal state */
+    text-transform: uppercase;  /* Make the text uppercase */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    background-color: transparent;  /* No background by default */
 }
+
+/* Active link style (when section is in view) */
+.navbar-nav .nav-link.active {
+    color: #fff !important;  /* White text for active link */
+    background-color: #0779e4;  /* Highlight background for active link */
+    border-radius: 4px;  /* Rounded corners for the active link */
+    padding: 8px 16px;  /* Add padding for better visibility */
+}
+
 
 .navbar-nav .nav-link:hover {
     color: #0056b3;  /* Darker blue on hover */
@@ -212,12 +223,26 @@ section {
     }
 }
 
-/* Style for active navbar link */
-.navbar-nav .nav-link.active {
-    color: #fff !important;   /* White text for active link */
-    background-color: #0779e4;  /* Background highlight for active link */
-    border-radius: 4px;  /* Rounded corners for the active link */
-    padding: 8px 16px;  /* Add padding for better visibility */
-    transition: background-color 0.3s ease-in-out;  /* Smooth transition effect */
+/* Styling for the Resume Download Button */
+.download-btn {
+    display: inline-block;
+    background-color: #0779e4; /* Primary blue color */
+    color: white;
+    padding: 15px 30px; /* Padding for a larger button */
+    font-size: 1.25rem; /* Larger font size */
+    border-radius: 50px; /* Fully rounded edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-decoration: none; /* Remove underline */
 }
 
+/* Hover effect */
+.download-btn:hover {
+    background-color: #065bb5; /* Darker shade on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deepen shadow on hover */
+    color: #fff; /* Keep text white */
+}
+
+.download-btn i {
+    margin-right: 10px; /* Space between the icon and text */
+}
